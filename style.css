@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --background-color: #060002;
+    --primary-color: #8DC53E;
+    --secondary-color: #00d3c5;
+    --accent-color: #B6237F;
+    --blend-color: #FEFDCE;
+}
+
+/* Main */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(21, 21, 21);
+    align-items: center;
+}
+
+.body {
+    width: 80%;
+    max-width: 400px;
+    height: 70vh;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(218, 218, 218, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Display */
+.display {
+    width: 100%;
+    height: 15vh;
+    background: var(--background-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: right;
+    position: relative;
+    color: white;
+}
+
+.display-num1 {
+    font-size: larger;
+    opacity: 0.4;
+    padding: .5rem 1rem 0rem;
+    margin-top: 1rem;
+}
+
+.display-num2 {
+    font-size: xx-large;
+    font-weight: bold;
+    padding: .25rem 1rem;
+}
+
+.display-numTemp {
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    padding: .5rem .5rem;
+}
+
+/* Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 55vh;
+    background: #060002;
+    padding: .5rem;
+}
+
+.button {
+    border: 3.5px solid rgba(252, 252, 252, 0.15);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 1px 1px 10px rgba(252, 252, 252, 0.1);
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgba(252, 252, 252, 0.1);
+}
+
+/* Operations */
+.operation {
+    background-color: var(--accent-color);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
+    transform: scale(.8);
+    font-weight: bold;
+}
+
+.operation:hover {
+    background: var(--primary-color);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, .9);
+    transform: scale(.85);
+}
+
+.decimal {
+    font-weight: bold;
+    font-size: larger;
+    background: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .1);
+}
+
+.decimal:hover {
+    background-color: rgba(252, 252, 252, 0.1);
+    transform: scale(.85);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .5);
+}
+
+.equals {
+    background: var(--secondary-color);
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.equals:hover {
+    background: var(--blend-color);
+}
+
+.clear {
+    background: rgb(111, 0, 0);
+    border-radius: 0%;
+}
+
+.clear:hover {
+    background: var(--blend-color);
+}
+
+.clear-last {
+    background: rgb(111, 0, 29);
+    border-radius: 0%;
+}
+
+.clear-last:hover {
+    background: var(--blend-color);
+}
+
+.mod {
+    background: rgb(111, 0, 52);
+}
+
+.mod:hover {
+    background: #FEFDCE;
+}
+
+.number {
+    border-radius: 50%;
+    transform: scale(.8);
+}
+
+.number:hover {
+    transform: scale(.85);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, .5);
+}
+
+.btn-zero {
+    grid-column: 1 / 3;
+    border-radius: 0%;
+}
+
+.plus {
+    background: #B6237F;
+}
+
+.minus {
+    background: #b623ac;
+}
+
+.multiply {
+    background: #9423b6;
+    font-size: smaller;
+}
+
+.divide {
+    background: #2396b6;
+}
+
+/* Tagline */
+.tagline-div {
+    width: 100%;
+    background: var(--background-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: .5rem;
+    margin-top: -.75rem;
+    font-style: italic;
+}
+
+.tagline {
+    opacity: 0.4;
+}
